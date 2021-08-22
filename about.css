@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+}
+.text{
+   min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(logo.jpg);
+    background-position: center;
+    background-size:cover ;
+    position: relative;
+    display: flex;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    max-width: 90%;
+    margin: auto;
+    padding: 1.5rem;
+}
+@media screen and (max-width: 700px)
+{
+    #grid{
+    grid-template-columns: 1fr;
+    }
+}
+.about h1{
+    font-weight: 600;
+    font-size: 50px;
+    font-family: serif;
+    text-align: left;
+    border-left: 9px solid #fff;
+}
+.about h3{
+    font-size: 20px;
+}
+.about p{
+    font-size: 20px;
+    text-align: left;
+}
+.about i{
+    font-size: 30px;
+}
